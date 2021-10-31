@@ -1,0 +1,8 @@
+library(rJava)
+library(RNetLogo)
+setwd("C:/Program Files/NetLogo 6.0.3/app")
+nl.path<-getwd()
+NLStart("C:/Program Files/NetLogo 6.0.3/app", gui = TRUE, nl.jarname = "netlogo-6.0.3.jar")
+model.path <- file.path("c:","users","ashkan pirmani","desktop","thesis","model.nlogo")
+NLLoadModel(model.path )
+NLCommand("set-up","go")
